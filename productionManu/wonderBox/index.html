@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+  <title>WonderBox</title>
+</head>
+<body>
+
+  <div id = "rideauG"></div>
+  <div id = "rideauD"></div>
+
+  <!-- Barre de navigation bootstrap 4.3 -->
+  <nav id = "navMenu" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">Wonder Box</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" id="navHome" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" data-toggle="modal" data-target="#panierModal" href="#">Panier</a>
+
+        <!--<a class="nav-link" href="#">Panier</a>-->
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Catégories
+      </a>
+      <div id = "menuScroll" class="dropdown-menu rounded" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" id="navCategory1" href="#">Voyage Aventure</a>
+        <a class="dropdown-item" id="navCategory2" href="#">Voyage de noce</a>
+        <a class="dropdown-item" id="navCategory3" href="#">Voyage en famille</a>
+        <a class="dropdown-item" id="navCategory4" href="#">Voyage en solitaire</a>
+      </div>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div>
+</nav>
+<!-- Début du corps de la page -->
+<h1 id="title"> Wonder Box </h1>
+<!-- Page de l'Acceuil du site web -->
+<section id="home">
+  <div class = "col-10 mx-auto">
+    <div class="row p-5">
+      <div class = "cat col-lg-4" id = "cat1">
+        <img src = 'assets/img/main/vignetteAdventure.jpg'/>
+      </div>
+      <div class = "col-lg-1">
+      </div>
+      <div class = "cat col-lg-4 pt-5" id = "cat3">
+        <img src = 'assets/img/main/vignetteFamily.jpg'/>
+      </div>
+    </div>
+    <div class="row justify-content-center pb-5">
+      <div class = "cat col-lg-4 pt-4" id = "cat2">
+        <img src = 'assets/img/main/vignetteHoneyMoon.jpg'/>
+      </div>
+      <div class = "cat col-lg-4 pt-2" id = "cat4">
+        <img src = 'assets/img/main/vignetteSolo.jpg'/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 1ère Section ==> Catégorie Voyage Aventure -->
+<section id="category1" class="category">
+  <!-- Première ligne d'articles Catégorie 1 -->
+  <div class="row justify-content-around py-5">
+    <div id="article11" class="article col-lg-3 border rounded">
+      <img id="pic11" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal"/>
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle11" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle11"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle11"></td>
+          </tr>
+          <!-- <tr>
+          <td>Prix Enfant UT :</td>
+          <td id="prixChildArticle11"></td>
+        </tr> -->
+      </tbody>
+    </table>
+    <button id="buttonPanier11" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+  </div>
+  <div id="article12" class="article col-lg-3 border rounded">
+    <img id="pic12" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+    <table>
+      <thead>
+        <tr>
+          <th id="nomArticle12" colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Référence :</td>
+          <td id="refArticle12"></td>
+        </tr>
+        <tr>
+          <td>Prix Unitaire :</td>
+          <td id="prixAdultArticle12"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="buttonPanier12" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+  </div>
+  <div id="article13" class="article col-lg-3 border rounded">
+    <img id="pic13" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+    <table>
+      <thead>
+        <tr>
+          <th id="nomArticle13" colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Référence :</td>
+          <td id="refArticle13"></td>
+        </tr>
+        <tr>
+          <td>Prix Unitaire :</td>
+          <td id="prixAdultArticle13"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="buttonPanier13" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+  </div>
+</div>
+<!-- Deuxième ligne d'articles Catégorie 1 -->
+<div class="row justify-content-around pb-5">
+  <div id="article14" class="article col-lg-3 border rounded">
+    <img id="pic14" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+    <table>
+      <thead>
+        <tr>
+          <th id="nomArticle14" colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Référence :</td>
+          <td id="refArticle14"></td>
+        </tr>
+        <tr>
+          <td>Prix Unitaire :</td>
+          <td id="prixAdultArticle14"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="buttonPanier14" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+  </div>
+  <div id="article15" class="article col-lg-3 border rounded">
+    <img id="pic15" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+    <table>
+      <thead>
+        <tr>
+          <th id="nomArticle15" colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Référence :</td>
+          <td id="refArticle15"></td>
+        </tr>
+        <tr>
+          <td>Prix Unitaire :</td>
+          <td id="prixAdultArticle15"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="buttonPanier15" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+  </div>
+  <div id="article16" class="article col-lg-3 border rounded">
+    <img id="pic16" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+    <table>
+      <thead>
+        <tr>
+          <th id="nomArticle16" colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Référence :</td>
+          <td id="refArticle16"></td>
+        </tr>
+        <tr>
+          <td>Prix Unitaire :</td>
+          <td id="prixAdultArticle16"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="buttonPanier16" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+  </div>
+</div>
+</section>
+
+
+<!-- 2ème Section ==> Catégorie Voyage de Noces -->
+<section id="category2" class="category">
+  <div class="row justify-content-around py-5">
+    <!-- Première ligne d'articles Catégorie 2 -->
+    <div id="article21" class="article col-lg-3 border rounded">
+      <img id="pic21" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle21" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle21"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle21"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier21" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article22" class="article col-lg-3 border rounded">
+      <img id="pic22" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle22" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle22"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle22"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier22" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article23" class="article col-lg-3 border rounded">
+      <img id="pic23" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle23" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle23"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle23"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier23" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+  </div>
+  <div class="row justify-content-around pb-5">
+    <!-- Deuxième ligne d'articles Catégorie 2 -->
+    <div id="article24" class="article col-lg-3 border rounded">
+      <img id="pic24" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle24" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle24"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle24"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier24" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article25" class="article col-lg-3 border rounded">
+      <img id="pic25" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle25" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle25"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle25"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier25" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article26" class="article col-lg-3 border rounded">
+      <img id="pic26" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle26" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle26"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle26"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier26" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- 3ème Section ==> Catégorie Voyage en famille -->
+<section id="category3" class="category">
+  <div class="row justify-content-around py-5">
+    <!-- Première ligne d'articles Catégorie 3 -->
+    <div id="article31" class="article col-lg-3 border rounded">
+      <img id="pic31" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle31" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle31"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle31"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier31" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article32" class="article col-lg-3 border rounded">
+      <img id="pic32" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle32" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle32"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle32"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier32" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article33" class="article col-lg-3 border rounded">
+      <img id="pic33" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle33" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle33"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle33"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier33" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+  </div>
+  <div class="row justify-content-around pb-5">
+    <!-- Deuxième ligne d'articles Catégorie 3 -->
+    <div id="article34" class="article col-lg-3 border rounded">
+      <img id="pic34" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle34" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle34"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle34"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier34" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article35" class="article col-lg-3 border rounded">
+      <img id="pic35" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle35" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle35"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle35"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier35" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article36" class="article col-lg-3 border rounded">
+      <img id="pic36" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle36" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle36"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle36"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier36" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- 4ème Section ==> Catégorie Voyage en Solitaire -->
+<section id="category4" class="category">
+  <div class="row justify-content-around py-5">
+    <!-- Première ligne d'articles Catégorie 4 -->
+    <div id="article41" class="article col-lg-3 border rounded">
+      <img id="pic41" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle41" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle41"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle41"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier41" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article42" class="article col-lg-3 border rounded">
+      <img id="pic42" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle42" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle42"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle42"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier42" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article43" class="article col-lg-3 border rounded">
+      <img id="pic43" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle43" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle43"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle43"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier43" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+  </div>
+  <div class="row justify-content-around pb-5">
+    <!-- Deuxième ligne d'articles Catégorie 4 -->
+    <div id="article44" class="article col-lg-3 border rounded">
+      <img id="pic44" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle44" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle44"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle44"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier44" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article45" class="article col-lg-3 border rounded">
+      <img id="pic45" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle45" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle45"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle45"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier45" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+    <div id="article46" class="article col-lg-3 border rounded">
+      <img id="pic46" src="" class="my-4 rounded" data-toggle="modal" data-target="#articleModal" />
+      <table>
+        <thead>
+          <tr>
+            <th id="nomArticle46" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Référence :</td>
+            <td id="refArticle46"></td>
+          </tr>
+          <tr>
+            <td>Prix Unitaire :</td>
+            <td id="prixAdultArticle46"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="buttonPanier46" type="button" class="buttonPanier btn btn-outline-primary btn-lg btn-block mt-4" value="">Ajouter au panier</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block mb-4" data-toggle="modal" data-target="#panierModal">Voir panier</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Pied de page du site web -->
+<footer>
+  <div class = "wrapper">
+    <h2>Contactez notre DREAM TEAM</h2>
+    <div>Copyright 2019.Tous droits réservés.</div>
+  </div>
+</footer>
+
+
+<!-- Modal du Panier-->
+<div class="modal fade bd-example-modal-lg" id="panierModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Votre Panier :</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <table border="0" >
+            <thead>
+              <tr>
+                <th> noms des articles</th>
+                <th>prix pour un adulte</th>
+                <th>nombre de personnes </th>
+                <th>total unitaire </th>
+              </tr>
+            </thead>
+            <tbody id="panierAfficher">
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>nombre d'aticle</th>
+                <th id="nombredarticle"></th>
+                <th>total ht:</th>
+                <th id="totalht"></th>
+              </tr>
+              <tr>
+                <th ></th>
+                <th></th>
+                <th>tva 20%:</th>
+                <th id="tva"></th>
+              </tr>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>total ttc:</th>
+                <th id="totalttc"></th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Description-->
+<div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="NnomArticle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div id="Narticle" class="Narticle border" >
+            <img src="" id="Npic" data-toggle="modal" data-target="#articleModal"/>
+            <div id="Nfiche">
+              <table>
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="text-center">Description :</td>
+                  </tr>
+                  <tr>
+                    <td id="Ndescription" colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td>Reférence :</td>
+                    <td id="NrefArticle"></td>
+                  </tr>
+                  <tr>
+                    <td>Prix Adulte UT :</td>
+                    <td id="NprixAdultArticle"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.0.js"
+integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

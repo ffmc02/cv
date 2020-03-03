@@ -1,0 +1,117 @@
+body
+{
+      background-color: rgba(255, 255, 255);
+    text-align: center;
+    margin:0px;
+    padding:0px;
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    /*Pour ne pas rendre le texte sélectionnable, évite les backgrounds bleus 
+    (surtout quand on double clique sur une page, par exemple), à mettre dans la balise body du css*/
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+    list-style-type: none;
+    color: green;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indexBright{
+    /*font-size: 35px;*/
+}
+.infoUtile{
+    font-size: 25 px;
+    color: black;
+}
+#titleInfo{
+    font-size: 50px;
+    
+}
+#slateBare{
+    position:fixed; 
+}
+#columnCenter{
+    position: absolute;
+}
+#Goals,
+#productionD2wm, #skills, #training, #professionalexperiences, #productionCda, #contact, #hobbies, .espace
+{
+    border: 4px blueviolet dotted;
+}
+
+.espace{
+    
+    height: 700px;
+    width: auto;
+}
+a:hover
+{
+    background-color:#005d50;
+    color:white;
+    text-decoration:none;
+}
+.formulaire{
+    font-size: 25px;
+}
+.titleRealisationDwm, 
+.titleRealisationCda, 
+.hobbisesTitle, 
+.h1ptofessional, 
+.h1training, 
+.titrecompetance,
+.titleRealisationCda,
+.titleContact,
+#Goals
+{
+    font-size:40px;
+    color: black;
+}
+.formulaire{
+    color: red;
+    font-size: 20px;
+}
+a{
+    color: blue;
+}
+#imgTraining, #imgSkills, #imgProfessionalExperiences, #imgProductionD2wm, #imgProductionCda,#imgHobbies
+{
+    background-attachment: fixed; 
+    width: 100%;
+    height: 98%;
+    
+}
+#rally{
+    height: 250px;
+    width: auto;
+}
+p
+{
+    color: black;
+        
+}
+h2{
+    color: wheat;
+    font-size: 40px;
+}
+h4{
+    font-size: 25px;
+    color: yellowgreen;
+}
+h3{
+    font-size: 35px;
+    color: gold;
+}
+h1{
+  font-size: 50px;
+color: grey;  
+}
+h5 {
+    font-size: 30px;
+}
+#titleCv{
+    font-size: 60px;
+    color: lightgreen;
+}

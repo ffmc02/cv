@@ -1,0 +1,314 @@
+/*fond général*/
+.fondindex 
+{
+      margin:0;
+  padding:0;
+    -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */                                  
+  background-size: cover; 
+   /* version standardisée */
+    color: whitesmoke;
+    background: url("../img/concert.jpg")no-repeat center fixed; 
+ background-color: #d1d1d1;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 20px;
+    padding: 30px;
+    text-shadow: 3px 3px 0px grey;   
+}
+
+td , tr
+{
+   
+
+  border:  5px solid;
+/*border-color: beige;*/  
+}
+/* fin des bloc*/
+/*----------------------------------------------------------------------------------------------*/
+/* index*/
+/*pour faire de bloc*/
+.difspectacleindex , .bienvenuindex , .artisteindex , .dateindex , .titrepossetion
+{
+     background-color: rgba(0, 0, 0, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+/*animation titre*/
+.titre1index
+{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+/*---------------------------------------------------------------------------------*/
+bienvenuindex
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+/*-----------------------------------------------------*/
+.titre1index
+{
+    text-align: center;
+   font-size: 60px;
+}
+.proposecpindex
+{
+  font-size: 20px;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*clientFidelitylist*/
+.titretableclientfidelityliste
+{
+    color: #5a3a30;
+}
+.fondclientFidelitylist
+{
+    text-align: center;
+ color: whitesmoke;
+    background: url("../img/people.jpg") no-repeat center fixed;
+/*        no-repeat center fixed;*/
+/*    background-repeat: no-repeat;*/
+ }
+ /*pour faire de bloc*/
+.titrepossetion , .tableauclientFidelitylist
+{
+     background-color: rgba(0, 0, 0, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.tableauclientFidelitylist
+{
+    text-align: center;
+}
+/*----------------------------------------------------------------------------------*/
+/*clientlist*/
+.fondclientlist
+{
+      margin:0;
+  padding:0;
+    -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */                                  
+  background-size: cover; 
+   /* version standardisée */
+    color: whitesmoke;
+    background: url("../img/theatre.jpg")no-repeat center fixed; 
+/* background-color: #d1d1d1;*/
+    box-shadow: 2px 2px 10px white;
+    border-radius: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 0px grey;   
+}
+
+table td, table th{
+   background-color: rgba(0, 0, 0, 0.3); 
+}
+
+ /*pour faire de bloc*/
+ .titretableclientliste  , .titreclientlist , .nomclientlist , .tableclientlist
+{
+  background-color: rgba(0, 0, 0, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+.titretableclientliste
+{
+    size: 35PX;
+}
+.nomclientlist
+{
+    text-align: center;
+    size: 25px;
+    text-shadow: 2px 2px 2px black;
+}
+/*------------------------------------------------------------------------------*/
+/*liste des clients commancant par la lettre M*/
+.fondclientm
+{
+      margin:0;
+  padding:0;
+    -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */                                  
+  background-size: cover; 
+   /* version standardisée */
+    color: whitesmoke;
+    background: url("../img/theatre.jpg")no-repeat center fixed; 
+ background-color: #d1d1d1;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 0px grey;   
+}
+/*pour faire de bloc*/
+ .titreclientm  , .tableauclientm , .titretableclientM
+{
+  background-color: rgba(0, 0, 0, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+.titretableclientM
+{
+    size: 60PX;
+}
+.nomclientm
+{
+/*    text-align: center;*/
+    size: 25px; 
+    text-shadow: 2px 2px 2px black;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*liste des deux clients possédant la carte de fidelité (customersWithLoyaltyCardList))*/
+.fondautreclient
+{
+     margin:0;
+  padding:0;
+    -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */                                  
+  background-size: cover; 
+   /* version standardisée */
+    color: whitesmoke;
+    background: url("../img/disco.jpg")no-repeat center fixed; 
+ background-color: #d1d1d1;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 0px grey; 
+}
+/*pour faire de bloc*/
+.titreclient2 , .tableauclient2 , .titretableautre , .nomclientautre
+{
+  background-color: rgba(0, 0, 0, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*20 premier client*/
+.fond20first
+{
+     margin:0;
+  padding:0;
+    -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */                                  
+  background-size: cover; 
+   /* version standardisée */
+    color: whitesmoke;
+    background: url("../img/attente.jpg")no-repeat center fixed; 
+ background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px white;
+    border-radius: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 0px grey; 
+}
+/*pour faire de bloc*/
+.titre20first , .titretable20first , .nom20first
+{
+  background-color: rgba(0, 0, 0, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*prochain spectacle*/
+.fondshow
+{
+     margin:0;
+  padding:0;
+    -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */                                  
+  background-size: cover; 
+   /* version standardisée */
+    color: whitesmoke;
+    background: url("../img/roman.jpg")no-repeat center fixed; 
+ background-color: #d1d1d1;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 0px grey; 
+}
+/*pour faire de bloc*/
+.tableaushow , .titreshow , .titretableshow , .nomshow
+{
+  background-color: rgba(0, 0, 0, 0.3);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+/*----------------------------------------------------------------------------*/
+/*diferent type de sepctacle*/
+.fondtypeschow
+{
+    
+     margin:0;
+  padding:0;
+    -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */                                  
+  background-size: cover; 
+   /* version standardisée */
+    color: whitesmoke;
+    background: url("../img/colloseum.jpg")no-repeat center fixed; 
+ background-color: #d1d1d1;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 0px grey; 
+}
+/*pour faire de bloc*/
+.nomtypeschow , .titretabletypeschow ,  .tableautypeschow , .titretypeschow
+{
+  background-color: rgba(0, 0, 0, 0.3);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+/*a,imation clignotment*/
+.titretypeschow , .titreshow , .ici
+{
+    animation-name: clignotement;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes clignotement{
+    0%{
+        opacity: 0;
+     
+    }
+    25%{
+       opacity: 1;
+    }
+   50%
+   {
+   opacity: 0;    
+   }
+    100%{
+        opacity: 1;
+    }  
+}
