@@ -50,7 +50,7 @@ include ("../include/head.php");
                     </div>
                 </div>
                 <div class="espace">
-                    <img id="imgSkills" src="../asset/img/imagePresentation/sécurité_informatique_pouvoir_public_112185177_Drupal.jpg" alt="photoWeb"/>
+                    <img id="imgSkills" src="asset/img/imagePresentation/sécurité_informatique_pouvoir_public_112185177_Drupal.jpg" alt="photoWeb"/>
                 </div>
                 <div id="skills">
                     <div class="row">
@@ -266,65 +266,67 @@ include ("../include/head.php");
                     </div>
                 </div>
                 <div class="espace">
-                    <img  id="imgTraining"src="../asset/img/imagePresentation/10390091.jpg" alt=""/>
                     <!--espace entre les différentes catégorie-->
+                    <img id="imgProductionD2wm"src="asset/img/imagePresentation/realisation-application-web_330x330-crop=1.jpg" alt=""/>
                 </div>
-                <div id="training">
-                    <div class="titleTraining col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h2 class="h1training">Mes formations professionnelles</h2>
-                    </div>
-                    <div class="trainingDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h3>Janvier-septembre 2020</h3>
-                        <p>formation de Concepteur développeur d'Application <br>
-                            Titre Professionnel Niveau bac +3/4 <br>
-                            AFPA Amiens </p>
-                    </div>
-                    <div class="trainingBright col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h3>Mars-septembre2019 TITRE OBTENUE</h3>
-                        <p>titre profestionnel de devellopeur web web mobile <br> la Manu niveau bac+2</p>
-                    </div>
-                    <div class="trainingDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h3>2018</h3>
-                        <p>formation de sauveteur secouriste du travail</p>
-                    </div>
-                    <div class="trainingBright col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h3>avril-juillet 2017</h3>
-                        <p>titre profestionnel de conducteur de voyageur inter hurbain niveau cap <br> titre obtenue</p>
+                <div id="productionD2wm"> 
+                    <div class=" row">
+                        <div class="titleRealisationDwm col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h1>Mes projets réalisés pendant ma formation Web Développeur à la MANU Soissons (02)<br>
+                                du 18 mars au 13 septembre 2019</h1>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="trainingDark col-sm-12 col-md-6 col-lg-6 border border-white">
-                            <h3>2015</h3>
-                            <p>certificat de qualification profestionnel<br> 
-                                d'agent de prévention et de sécurité.<br>
-                                Certificat obtenue</p>
+                        <div class="realisationDarcks col-sm-12 col-md-4 col-lg-4  border border-white">
+
+                            <h2>Mon premier projet de groupe</h2>  <br>
+                            <p>Reproduire la page d'accueil du site SFR <br>
+                                Pour le voir cliquez <a href="productionManu/Repro_SFR/index.html" class="icirealistation" target="_blank">ICI</a></p>
                         </div>
-                        <div class="trainingDark col-sm-12 col-md-6 col-lg-6 border border-white">
-                            <h3>2015</h3>
-                            <p>formatioin Service de Sécurité incendie <br> 
-                                et assistance au personnes <br>
-                                Certificat obtenue</p>
+
+                        <div class="RealisationBright col-sm-12 col-md-4 col-lg-4 border border-white">
+                            <h2>Second projet</h2>
+                            <p>Réaliser un site de E commerce <br>
+                                Pour le visiter c'est par <a href="productionManu/wonderBox/index.html" class="icirealistation" target="_blank">ICI</a></p>
                         </div>
-                    </div>
-                    <div class="trainingBright col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h3>2013/2014</h3>
-                        <p>formation d'aide médico-Psychologique <br>
-                            (diplome non obtenu suite a un accident de travail)</p>
-                    </div>
-                    <div class="trainingDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h3>Mars 2005</h3>>
-                        <p> certificat de Formation aux Activités <br> de Premier secours en Equipe <br>
-                            Certificat obtenue</p>
-                    </div>
-                    <div class="trainingBrightButton col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h3>juillet 2005</h3>
-                        <p>breuvet de jeune sapeur pompier SDIS80 <br>
-                            Certificat obtenue <br>
-                            (Service départemental d'incendie et de secours de la Sommes)
+                        <div class="realisationDarcks col-sm-12 col-md-4 col-lg-4 border border-white">
+                            <h2> 3ème projet</h2>
+                            <p> Réaliser un site à partir d'un fichier XML sans toucher à la structure <br> 
+                                Retrouvez le resultat en cliquant <a href="productionManu/ocordo/index.php" class="icirealistation" target="_blank"> ICI</a></p>
+                        </div>
+                        <div class="realisationDarcks col-sm-12 col-md-6 col-lg-6  border border-white">             
+                            <h2><span>E</span><span>x</span><span>e</span><span>r</span><span>c</span><span>i</span><span>c</span><span>e</span><span> </span> <span>P</span><span>D</span><span>O</span></h2>
+                            <p> Nous avons travaillé également sur le Mysql et la gestion des requêtes.<br>
+                                Retrouvez toute mon application sur une salle de spectacle <a href="productionManu/PDO/view/index.php" class="icirealistation" target="_blank"> ICI</a></p>
+                        </div>
+                        <div class="RealisationBrightRigt col-sm-12 col-md-6 col-lg-6 border border-white " >
+                            <h2>Projet professionel réaliser pour le titre de développeur web et web mobile </h2>
+                            <p>Utilisation de tout les langages vue pendant la formation <a href="http://ffmc02.fr/index" class="icirealistation" target="_blank">ici</a></p>
+                        </div>
                     </div>
                 </div>
                 <div class="espace">
                     <!--espace entre les différentes catégorie-->
-                    <img id="imgProfessionalExperiences"src="../asset/img/imagePresentation/ob_707a2e_400-f-68091104-r9ugmv7kzh9jkvp66yn5vdd.jpg" alt=""/>
+                    <img  id="imgProductionCda" src="asset/img/imagePresentation/REALISATION-BRAS-1810-2016-ok.png" alt=""/>
+                </div>
+                <div id="productionCda">
+                    <div class=" row">
+                        <div class="titleRealisationCda col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h1>Mes projets réalisés pendant ma formation de Concepteur développeur d'application AFPA Amiens (80)<br>
+                                du 20 janvier au 25 septembre 2020</h1>
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class="RealisationBrightRigt col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h2>Formulaire en HTML</h2> 
+                            <p>   Vérification éffectuer en JavaScript. <br> 
+                                <a href="productionCda/formulaireJsHtml/index.php" target="_blank">ICI</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="espace">
+                    <!--espace entre les différentes catégorie-->
+                    <img id="imgProfessionalExperiences"src="asset/img/imagePresentation/ob_707a2e_400-f-68091104-r9ugmv7kzh9jkvp66yn5vdd.jpg" alt=""/>
                 </div>
                 <div id="professionalexperiences">   
                     <div class="row">
@@ -382,8 +384,67 @@ include ("../include/head.php");
                         </div>
                     </div>
                 </div>
+                <div class="espace">
+                    <img  id="imgTraining"src="asset/img/imagePresentation/10390091.jpg" alt=""/>
+                    <!--espace entre les différentes catégorie-->
+                </div>
+                <div id="training">
+                    <div class="titleTraining col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h2 class="h1training">Mes formations professionnelles</h2>
+                    </div>
+                    <div class="trainingDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h3>Janvier-septembre 2020</h3>
+                        <p>formation de Concepteur développeur d'Application <br>
+                            Titre Professionnel Niveau bac +3/4 <br>
+                            AFPA Amiens </p>
+                    </div>
+                    <div class="trainingBright col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h3>Mars-septembre2019 TITRE OBTENUE</h3>
+                        <p>titre profestionnel de devellopeur web web mobile <br> la Manu niveau bac+2</p>
+                    </div>
+                    <div class="trainingDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h3>2018</h3>
+                        <p>formation de sauveteur secouriste du travail</p>
+                    </div>
+                    <div class="trainingBright col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h3>avril-juillet 2017</h3>
+                        <p>titre profestionnel de conducteur de voyageur inter hurbain niveau cap <br> titre obtenue</p>
+                    </div>
+                    <div class="row">
+                        <div class="trainingDark col-sm-12 col-md-6 col-lg-6 border border-white">
+                            <h3>2015</h3>
+                            <p>certificat de qualification profestionnel<br> 
+                                d'agent de prévention et de sécurité.<br>
+                                Certificat obtenue</p>
+                        </div>
+                        <div class="trainingDark col-sm-12 col-md-6 col-lg-6 border border-white">
+                            <h3>2015</h3>
+                            <p>formatioin Service de Sécurité incendie <br> 
+                                et assistance au personnes <br>
+                                Certificat obtenue</p>
+                        </div>
+                    </div>
+                    <div class="trainingBright col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h3>2013/2014</h3>
+                        <p>formation d'aide médico-Psychologique <br>
+                            (diplome non obtenu suite a un accident de travail)</p>
+                    </div>
+                    <div class="trainingDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h3>Mars 2005</h3>>
+                        <p> certificat de Formation aux Activités <br> de Premier secours en Equipe <br>
+                            Certificat obtenue</p>
+                    </div>
+                    <div class="trainingBrightButton col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <h3>juillet 2005</h3>
+                        <p>breuvet de jeune sapeur pompier SDIS80 <br>
+                            Certificat obtenue <br>
+                            (Service départemental d'incendie et de secours de la Sommes)
+                    </div>
+                </div>
+
+
                 <div class="espace"> <!--espace entre les différentes catégorie-->
-                    <img id="imgHobbies" src="../asset/img/imagePresentation/example-of-cv-hobbies-450x295.png" alt=""/>
+                    <img id="imgHobbies" src="asset/img/imagePresentation/example-of-cv-hobbies-450x295.png" alt=""/>
                 </div>
 
                 <div id="hobbies">
@@ -395,7 +456,7 @@ include ("../include/head.php");
                     <div class="Hobbises row">
                         <div class=" hobbisesDark col-sm-12 col-md-12 col-lg-12 border border-white">
                             <h2 >LA Moto</h2>
-                            <img id="bike" src="../asset/img/imagePresentation/moto.jpg" alt=""/>
+                            <img id="bike" src="asset/img/imagePresentation/moto.jpg" alt=""/>
                             <p class="Hobbises">
                                 Je posséde le permis moto depuis maintetnant 12 ans, j'ai repris l'antenne  la Fédération Française des Motards en Colére de l'Aisne depuis le 14 janvier 2017, <br>,
                                 j'ai travaillé sur la renaissance de cette antenne depuis le mois de juin 2016.<br>
@@ -404,7 +465,7 @@ include ("../include/head.php");
                             </p>
                         </div>
                         <div class="hobbisesBrightRally col-sm-12 col-md-12 col-lg-12 border border-white">
-                            <img  id="rally" src="../asset/img/imagePresentation/En-remplacement-de-la-carte-voeux.png" alt=""/>
+                            <img  id="rally" src="asset/img/imagePresentation/En-remplacement-de-la-carte-voeux.png" alt=""/>
                             <h2 class="h2hobbises">Le rallye automobiles</h2>
                             <p class="pHobbises">
                                 La passion que j'ai pour le Rally vient surement de mon pére qui a été pîlote dans les années 80 au volant d'une R5 turbo 2 rouge.<br>
@@ -416,66 +477,7 @@ include ("../include/head.php");
                         </div>
                     </div>
                 </div>
-                <div class="espace">
-                    <!--espace entre les différentes catégorie-->
-                    <img id="imgProductionD2wm"src="../asset/img/imagePresentation/realisation-application-web_330x330-crop=1.jpg" alt=""/>
-                </div>
-                <div id="productionD2wm"> 
-                    <div class=" row">
-                        <div class="titleRealisationDwm col-sm-12 col-md-12 col-lg-12 border border-white">
-                            <h1>Mes projets réalisés pendant ma formation Web Développeur à la MANU Soissons (02)<br>
-                                du 18 mars au 13 septembre 2019</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="realisationDarcks col-sm-12 col-md-4 col-lg-4  border border-white">
 
-                            <h2>Mon premier projet de groupe</h2>  <br>
-                            <p>Reproduire la page d'accueil du site SFR <br>
-                                Pour le voir cliquez <a href="../productionManu/Repro_SFR/index.html" class="icirealistation" target="_blank">ICI</a></p>
-                        </div>
-
-                        <div class="RealisationBright col-sm-12 col-md-4 col-lg-4 border border-white">
-                            <h2>Second projet</h2>
-                            <p>Réaliser un site de E commerce <br>
-                                Pour le visiter c'est par <a href="../productionManu/wonderBox/index.html" class="icirealistation" target="_blank">ICI</a></p>
-                        </div>
-                        <div class="realisationDarcks col-sm-12 col-md-4 col-lg-4 border border-white">
-                            <h2> 3ème projet</h2>
-                            <p> Réaliser un site à partir d'un fichier XML sans toucher à la structure <br> 
-                                Retrouvez le resultat en cliquant <a href="../productionManu/ocordo/index.php" class="icirealistation" target="_blank"> ICI</a></p>
-                        </div>
-                        <div class="realisationDarcks col-sm-12 col-md-6 col-lg-6  border border-white">             
-                            <h2><span>E</span><span>x</span><span>e</span><span>r</span><span>c</span><span>i</span><span>c</span><span>e</span><span> </span> <span>P</span><span>D</span><span>O</span></h2>
-                            <p> Nous avons travaillé également sur le Mysql et la gestion des requêtes.<br>
-                                Retrouvez toute mon application sur une salle de spectacle <a href="../productionManu/PDO/view/index.php" class="icirealistation" target="_blank"> ICI</a></p>
-                        </div>
-                        <div class="RealisationBrightRigt col-sm-12 col-md-6 col-lg-6 border border-white " >
-                            <h2>Projet professionel réaliser pour le titre de développeur web et web mobile </h2>
-                            <p>Utilisation de tout les langages vue pendant la formation <a href="http://ffmc02.fr/index" class="icirealistation" target="_blank">ici</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="espace">
-                    <!--espace entre les différentes catégorie-->
-                    <img  id="imgProductionCda" src="../asset/img/imagePresentation/REALISATION-BRAS-1810-2016-ok.png" alt=""/>
-                </div>
-                <div id="productionCda">
-                    <div class=" row">
-                        <div class="titleRealisationCda col-sm-12 col-md-12 col-lg-12 border border-white">
-                            <h1>Mes projets réalisés pendant ma formation de Concepteur développeur d'application AFPA Amiens (80)<br>
-                                du 20 janvier au 25 septembre 2020</h1>
-                        </div>
-                    </div>
-                    <div class=" row">
-                        <div class="RealisationBrightRigt col-sm-12 col-md-12 col-lg-12 border border-white">
-                            <h2>Formulaire en HTML</h2> 
-                            <p>   Vérification éffectuer en JavaScript. <br> 
-                                <a href="../productionCda/formulaireJsHtml/index.php" target="_blank">ICI</a></p>
-                        </div>
-
-                    </div>
-                </div>
                 <!--                <div class="espace">
                                     espace entre les différentes catégorie
                                 </div>-->
