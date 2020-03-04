@@ -5,230 +5,225 @@ include_once '../controleur/indexCtrl.php';
 include ("../include/head.php");
 //include ("../include/navbar.php");
 ?>
-<!--corps de la page -->
-<div class="bd container-fluid">
-    <div class="row colonneleft">
-        <div class="col-lg-5 text-center"></div>
-        <div class="col-lg4"  id="titleCv">
-            <h1 id="titleCv">CV INTERACTIF GAËTAN JONARD</h1>
-        </div>
-    </div>
-    <!--fin entête-->
-    <!-- collone de gauche-->
+<div class="container-fluid">
     <div class="row">
-        <div id="columnLeft" class="col-lg-3 px-0 " >
-            <div id="slateBare" >
-                <div>
-                    <h1 id="titleInfo">Information Utiles</h1>
-                    <p class="infoUtile">Gaëtan Jonard <br>
-                        app 8 batiment des Accacias <br> 
-                        8 rue E Potelet <br>
-                        02320 Prémontré <br>
-                        TEL: 06/14/59/37/45 <br>
-                        Mail: gaetan.jonard@outlook.fr</p>
-                </div>
-                <div> 
-                    <a href="#Goals">Hauts de Pages</a><br>
-                    <a href="#skills">compétence proféssionel</a><br>
-                    <a href="#training">Mes compétences proféssionnel</a><br>
-                    <a href="#professionalexperiences">Experiences professionnel</a><br>
-                    <a href="#productionD2wm">Mes réalisation  pendant le D2WM </a><br>
-                    <a href="#productionCda">Mes réalisation  pendant le CDA </a><br>
-                    <a href="#hobbies">Mes loisirs</a><br>
-                    <a href="#contact">Me contacter</a>
-                </div>
-            </div>
-            <div id="">
-                <div class="row">
-                    <div class="titleSkillis col-sm-12 col-md-12 col-lg-12 border border-white text-center">
-                        <h2 class="titrecompetance">Mes compétences professionnelles</h2>
+        <div class="col-lg-12 text-center border">
+            <h1>CV INTERACTIF GAËTAN JONARD</h1>
+        </div>
+        <div class="col-lg-4 border center-content">
+            <div class="sticky-top">
+                <div id="slateBare" >
+                    <div>
+                        <h1 id="titleInfo">Information Utiles</h1>
+                        <p class="infoUtile">Gaëtan Jonard <br>
+                            app 8 batiment des Accacias <br> 
+                            8 rue E Potelet <br>
+                            02320 Prémontré <br>
+                            TEL: 06/14/59/37/45 <br>
+                            Mail: gaetan.jonard@outlook.fr</p>
                     </div>
-                </div> 
-                <div class="row">
-                    <div class="skillsBright col-sm-12 col-md-12 col-lg-12 border border-white px-0">
-                        <h3> Web Développement</h3>
+                    <div> 
+                        <a href="#Goals">Hauts de Pages</a><br>
+                        <a href="#skills">compétence proféssionel</a><br>
+                        <a href="#training">Mes compétences proféssionnel</a><br>
+                        <a href="#professionalexperiences">Experiences professionnel</a><br>
+                        <a href="#productionD2wm">Mes réalisation  pendant le D2WM </a><br>
+                        <a href="#productionCda">Mes réalisation  pendant le CDA </a><br>
+                        <a href="#hobbies">Mes loisirs</a><br>
+                        <a href="#contact">Me contacter</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h5 class="h3skills">Langages </h5>
-                    </div>
-                </div>
-                <div class="row justify-content-start" style="text-align: left;color:#000;">
-                    <?php
-                    $i = 0;
-                    foreach ($language as $key => $val) {
-                        $soffset = "offset-1";
-                        if ($i % 2 != 0) {
-                            $soffset = "";
-                        }
-                        ?>
-                        <div class="col-lg-5 <?= $soffset; ?>">
-                            <span><?= $val['titre']; ?></span>
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
-                            </div>
+                <div id="">
+                    <div class="row">
+                        <div class="titleSkillis col-sm-12 col-md-12 col-lg-12 border border-white text-center">
+                            <h2 class="titrecompetance">Mes compétences professionnelles</h2>
                         </div>
+                    </div> 
+                    <div class="row">
+                        <div class="skillsBright col-sm-12 col-md-12 col-lg-12 border border-white px-0">
+                            <h3> Web Développement</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h5 class="h3skills">Langages </h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start" style="text-align: left;color:#000;">
                         <?php
-                        $i++;
-                    }
-                    ?>               
-                </div>
-                <div class="row">
-                    <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h5 class="h3skills">Frameworks </h5>
+                        $i = 0;
+                        foreach ($language as $key => $val) {
+                            $soffset = "offset-1";
+                            if ($i % 2 != 0) {
+                                $soffset = "";
+                            }
+                            ?>
+                            <div class="col-lg-5 <?= $soffset; ?>">
+                                <span><?= $val['titre']; ?></span>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
+                                </div>
+                            </div>
+                            <?php
+                            $i++;
+                        }
+                        ?>               
+                    </div>
+                    <div class="row">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h5 class="h3skills">Frameworks </h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start" style="text-align: left;color:#000;">
+                        <?php
+                        $i = 0;
+                        foreach ($frameworks as $key => $val) {
+                            $soffset = "offset-1";
+                            if ($i % 2 != 0) {
+                                $soffset = "";
+                            }
+                            ?>
+                            <div class="col-lg-5 <?= $soffset; ?>">
+                                <span><?= $val['titre']; ?></span>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
+                                </div>
+                            </div>
+                            <?php
+                            $i++;
+                        }
+                        ?>               
+                    </div> 
+                    <div class="row">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h5 class="h3skills">Outils </h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start" style="text-align: left;color:#000;">
+                        <?php
+                        $i = 0;
+                        foreach ($outils as $key => $val) {
+                            $soffset = "offset-1";
+                            if ($i % 2 != 0) {
+                                $soffset = "";
+                            }
+                            ?>
+                            <div class="col-lg-5 <?= $soffset; ?>">
+                                <span><?= $val['titre']; ?></span>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
+                                </div>
+                            </div>
+                            <?php
+                            $i++;
+                        }
+                        ?>               
+                    </div>
+                    <div class="row">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h5 class="h3skills">Gestion Base de Donnée </h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start" style="text-align: left;color:#000;">
+                        <?php
+                        $i = 0;
+                        foreach ($databaseManagement as $key => $val) {
+                            $soffset = "offset-1";
+                            if ($i % 2 != 0) {
+                                $soffset = "";
+                            }
+                            ?>
+                            <div class="col-lg-5 <?= $soffset; ?>">
+                                <span><?= $val['titre']; ?></span>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
+                                </div>
+                            </div>
+                            <?php
+                            $i++;
+                        }
+                        ?>               
+                    </div> 
+                    <div class="row">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h5 class="h3skills">Extension </h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start" style="text-align: left;color:#000;">
+                        <?php
+                        $i = 0;
+                        foreach ($outils as $key => $val) {
+                            $soffset = "offset-1";
+                            if ($i % 2 != 0) {
+                                $soffset = "";
+                            }
+                            ?>
+                            <div class="col-lg-5 <?= $soffset; ?>">
+                                <span><?php echo $val['titre']; ?></span>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
+                                </div>
+                            </div>
+                            <?php
+                            $i++;
+                        }
+                        ?>               
+                    </div>
+                    <div class="row">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h5 class="h3skills">CMS </h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start" style="text-align: left;color:#000;">
+                        <?php
+                        $i = 0;
+                        foreach ($CMS as $key => $val) {
+                            $soffset = "offset-1";
+                            if ($i % 2 != 0) {
+                                $soffset = "";
+                            }
+                            ?>
+                            <div class="col-lg-5 <?= $soffset; ?>">
+                                <span><?php echo $val['titre']; ?></span>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
+                                </div>
+                            </div>
+                            <?php
+                            $i++;
+                        }
+                        ?>               
+                    </div>
+                    <div class="row">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                            <h5 class="h3skills">Autres Compétences </h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start" style="text-align: left;color:#000;">
+                        <?php
+                        $i = 0;
+                        foreach ($othrerAbilities as $key => $val) {
+                            $soffset = "offset-1";
+                            if ($i % 2 != 0) {
+                                $soffset = "";
+                            }
+                            ?>
+                            <div class="col-lg-5 <?= $soffset; ?>">
+                                <span><?php echo $val['titre']; ?></span>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
+                                </div>
+                            </div>
+                            <?php
+                            $i++;
+                        }
+                        ?>               
                     </div>
                 </div>
-                <div class="row justify-content-start" style="text-align: left;color:#000;">
-                    <?php
-                    $i = 0;
-                    foreach ($frameworks as $key => $val) {
-                        $soffset = "offset-1";
-                        if ($i % 2 != 0) {
-                            $soffset = "";
-                        }
-                        ?>
-                        <div class="col-lg-5 <?= $soffset; ?>">
-                            <span><?=$val['titre']; ?></span>
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
-                            </div>
-                        </div>
-                        <?php
-                        $i++;
-                    }
-                    ?>               
-                </div> 
-                <div class="row">
-                    <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h5 class="h3skills">Outils </h5>
-                    </div>
-                </div>
-                <div class="row justify-content-start" style="text-align: left;color:#000;">
-                    <?php
-                    $i = 0;
-                    foreach ($outils as $key => $val) {
-                        $soffset = "offset-1";
-                        if ($i % 2 != 0) {
-                            $soffset = "";
-                        }
-                        ?>
-                        <div class="col-lg-5 <?= $soffset; ?>">
-                            <span><?= $val['titre']; ?></span>
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
-                            </div>
-                        </div>
-                        <?php
-                        $i++;
-                    }
-                    ?>               
-                </div>
-                 <div class="row">
-                    <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h5 class="h3skills">Gestion Base de Donnée </h5>
-                    </div>
-                </div>
-                <div class="row justify-content-start" style="text-align: left;color:#000;">
-                    <?php
-                    $i = 0;
-                    foreach ($databaseManagement as $key => $val) {
-                        $soffset = "offset-1";
-                        if ($i % 2 != 0) {
-                            $soffset = "";
-                        }
-                        ?>
-                        <div class="col-lg-5 <?= $soffset; ?>">
-                            <span><?= $val['titre']; ?></span>
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
-                            </div>
-                        </div>
-                        <?php
-                        $i++;
-                    }
-                    ?>               
-                </div> 
-                <div class="row">
-                    <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h5 class="h3skills">Extension </h5>
-                    </div>
-                </div>
-                <div class="row justify-content-start" style="text-align: left;color:#000;">
-                    <?php
-                    $i = 0;
-                    foreach ($outils as $key => $val) {
-                        $soffset = "offset-1";
-                        if ($i % 2 != 0) {
-                            $soffset = "";
-                        }
-                        ?>
-                        <div class="col-lg-5 <?= $soffset; ?>">
-                            <span><?php echo $val['titre']; ?></span>
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
-                            </div>
-                        </div>
-                        <?php
-                        $i++;
-                    }
-                    ?>               
-                </div>
-                   <div class="row">
-                    <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h5 class="h3skills">CMS </h5>
-                    </div>
-                </div>
-                <div class="row justify-content-start" style="text-align: left;color:#000;">
-                    <?php
-                    $i = 0;
-                    foreach ($CMS as $key => $val) {
-                        $soffset = "offset-1";
-                        if ($i % 2 != 0) {
-                            $soffset = "";
-                        }
-                        ?>
-                        <div class="col-lg-5 <?= $soffset; ?>">
-                            <span><?php echo $val['titre']; ?></span>
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
-                            </div>
-                        </div>
-                        <?php
-                        $i++;
-                    }
-                    ?>               
-                </div>
-                  <div class="row">
-                    <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                        <h5 class="h3skills">Autres Compétences </h5>
-                    </div>
-                </div>
-                <div class="row justify-content-start" style="text-align: left;color:#000;">
-                    <?php
-                    $i = 0;
-                    foreach ($othrerAbilities as $key => $val) {
-                        $soffset = "offset-1";
-                        if ($i % 2 != 0) {
-                            $soffset = "";
-                        }
-                        ?>
-                        <div class="col-lg-5 <?= $soffset; ?>">
-                            <span><?php echo $val['titre']; ?></span>
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $val['valeur']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $val['valeur']; ?>%"></div>
-                            </div>
-                        </div>
-                        <?php
-                        $i++;
-                    }
-                    ?>               
-                </div>
-            </div>
-        </div>  
-        <!-- colonne central-->
-
-        <div id="columnCenter" class=" col-lg-9 px-0">
+            </div>  
+        </div>
+        <div class="col-lg-8 center border">
+            <!--colonne central-->
             <div class="row" id="Goals">
                 <div class="col-sm-12 col-md-12 col-lg-12 border border-white text-center">
                     <h1>Mon objectif :</h1>
@@ -509,11 +504,10 @@ include ("../include/head.php");
                     </div>
                 </div>
             </div>
+        
         </div>
-
     </div>
 </div>
-<!--Fin corp de pages-->
 <?php
 include ("../include/footer.php");
 ?>
