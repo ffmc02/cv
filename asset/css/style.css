@@ -1,5 +1,6 @@
 body
 {
+    font-size: 12px;
       background-color: rgba(255, 255, 255);
     text-align: center;
     margin:0px;
@@ -23,7 +24,7 @@ body
     /*font-size: 35px;*/
 }
 .infoUtile{
-    font-size: 20 px;
+    font-size: 12 px;
     color: black;
 }
 #titleInfo{
@@ -48,7 +49,7 @@ a:hover
     text-decoration:none;
 }
 .formulaire{
-    font-size: 25px;
+    font-size: 12px;
 }
 .titleRealisationDwm, 
 .titleRealisationCda, 
@@ -65,7 +66,7 @@ a:hover
 }
 .formulaire{
     color: red;
-    font-size: 20px;
+    font-size: 12px;
 }
 a{
     color: blue;
@@ -84,32 +85,25 @@ a{
 p
 {
     color: black;
-        
+      font-size: 12px;  
 }
 h2{
     color: wheat;
-    font-size: 40px;
+    font-size: 15px;
 }
 h4{
-    font-size: 25px;
+    font-size: 13px;
     color: yellowgreen;
 }
 h3{
-    font-size: 35px;
+    font-size: 14px;
     color: gold;
 }
 h1{
-  font-size: 50px;
+  font-size: 20px;
 color: grey;  
 }
 h5 {
     color: black;
-    font-size: 30px;
+    font-size: 13px;
 }
-#titleCv{
-    font-size: 60px;
-    color: lightgreen;
-}
-/*#leftColum {
-    overflow:scroll;
-}*/

@@ -24,7 +24,7 @@ include ("../include/head.php");
                                 TEL: 06/14/59/37/45 <br>
                                 Mail: gaetan.jonard@outlook.fr</p>
                         </div>
-                        <div class="col-lg-6">
+                        <div class=" infoUtile col-lg-6 text-center ">
                             <a href="#Goals">Hauts de Pages</a><br>
                             <a href="#skills">compétence proféssionel</a><br>
                             <a href="#training">Mes compétences proféssionnel</a><br>
@@ -237,7 +237,7 @@ include ("../include/head.php");
 
             <div class="espace">
                 <!--espace entre les différentes catégorie-->
-                <img id="imgProductionD2wm"src="asset/img/imagePresentation/realisation-application-web_330x330-crop=1.jpg" alt=""/>
+                <!--<img id="imgProductionD2wm"src="asset/img/imagePresentation/realisation-application-web_330x330-crop=1.jpg" alt=""/>-->
             </div>
             <div id="productionD2wm"> 
                 <div class=" row">
@@ -277,7 +277,7 @@ include ("../include/head.php");
             </div>
             <div class="espace">
                 <!--espace entre les différentes catégorie-->
-                <img  id="imgProductionCda" src="asset/img/imagePresentation/REALISATION-BRAS-1810-2016-ok.png" alt=""/>
+                <!--<img  id="imgProductionCda" src="asset/img/imagePresentation/REALISATION-BRAS-1810-2016-ok.png" alt=""/>-->
             </div>
             <div id="productionCda">
                 <div class=" row">
@@ -296,7 +296,7 @@ include ("../include/head.php");
             </div>
             <div class="espace">
                 <!--espace entre les différentes catégorie-->
-                <img id="imgProfessionalExperiences"src="asset/img/imagePresentation/ob_707a2e_400-f-68091104-r9ugmv7kzh9jkvp66yn5vdd.jpg" alt=""/>
+                <!--<img id="imgProfessionalExperiences"src="asset/img/imagePresentation/ob_707a2e_400-f-68091104-r9ugmv7kzh9jkvp66yn5vdd.jpg" alt=""/>-->
             </div>
             <div id="professionalexperiences">   
                 <div class="row">
@@ -355,7 +355,7 @@ include ("../include/head.php");
                 </div>
             </div>
             <div class="espace">
-                <img  id="imgTraining"src="asset/img/imagePresentation/10390091.jpg" alt=""/>
+                <!--<img  id="imgTraining"src="asset/img/imagePresentation/10390091.jpg" alt=""/>-->
                 <!--espace entre les différentes catégorie-->
             </div>
             <div id="training">
@@ -414,7 +414,7 @@ include ("../include/head.php");
 
 
             <div class="espace"> <!--espace entre les différentes catégorie-->
-                <img id="imgHobbies" src="asset/img/imagePresentation/example-of-cv-hobbies-450x295.png" alt=""/>
+                <!--<img id="imgHobbies" src="asset/img/imagePresentation/example-of-cv-hobbies-450x295.png" alt=""/>-->
             </div>
 
             <div id="hobbies">
