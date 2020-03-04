@@ -10,27 +10,30 @@ include ("../include/head.php");
         <div class="col-lg-12 text-center border">
             <h1>CV INTERACTIF GAËTAN JONARD</h1>
         </div>
-        <div class="col-lg-4 border center-content">
+        <div class="col-lg-4 border center-content" id="leftColum">
             <div class="sticky-top">
                 <div id="slateBare" >
-                    <div>
-                        <h1 id="titleInfo">Information Utiles</h1>
-                        <p class="infoUtile">Gaëtan Jonard <br>
-                            app 8 batiment des Accacias <br> 
-                            8 rue E Potelet <br>
-                            02320 Prémontré <br>
-                            TEL: 06/14/59/37/45 <br>
-                            Mail: gaetan.jonard@outlook.fr</p>
-                    </div>
-                    <div> 
-                        <a href="#Goals">Hauts de Pages</a><br>
-                        <a href="#skills">compétence proféssionel</a><br>
-                        <a href="#training">Mes compétences proféssionnel</a><br>
-                        <a href="#professionalexperiences">Experiences professionnel</a><br>
-                        <a href="#productionD2wm">Mes réalisation  pendant le D2WM </a><br>
-                        <a href="#productionCda">Mes réalisation  pendant le CDA </a><br>
-                        <a href="#hobbies">Mes loisirs</a><br>
-                        <a href="#contact">Me contacter</a>
+
+                    <h1 id="titleInfo">Information Utiles</h1>
+                    <div class="row">
+                        <div class="col-lg-6"> 
+                            <p class="infoUtile">Gaëtan Jonard <br>
+                                app 8 batiment des Accacias <br> 
+                                8 rue E Potelet <br>
+                                02320 Prémontré <br>
+                                TEL: 06/14/59/37/45 <br>
+                                Mail: gaetan.jonard@outlook.fr</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#Goals">Hauts de Pages</a><br>
+                            <a href="#skills">compétence proféssionel</a><br>
+                            <a href="#training">Mes compétences proféssionnel</a><br>
+                            <a href="#professionalexperiences">Experiences professionnel</a><br>
+                            <a href="#productionD2wm">Mes réalisation  pendant le D2WM </a><br>
+                            <a href="#productionCda">Mes réalisation  pendant le CDA </a><br>
+                            <a href="#hobbies">Mes loisirs</a><br>
+                            <a href="#contact">Me contacter</a>
+                        </div>
                     </div>
                 </div>
                 <div id="">
@@ -504,7 +507,7 @@ include ("../include/head.php");
                     </div>
                 </div>
             </div>
-        
+
         </div>
     </div>
 </div>

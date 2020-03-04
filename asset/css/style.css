@@ -23,7 +23,7 @@ body
     /*font-size: 35px;*/
 }
 .infoUtile{
-    font-size: 25 px;
+    font-size: 20 px;
     color: black;
 }
 #titleInfo{
@@ -38,7 +38,7 @@ body
 
 .espace{
     
-    height: 700px;
+    height: 210px;
     width: auto;
 }
 a:hover
@@ -72,9 +72,9 @@ a{
 }
 #imgTraining, #imgSkills, #imgProfessionalExperiences, #imgProductionD2wm, #imgProductionCda,#imgHobbies
 {
-    background-attachment: fixed; 
-    width: 100%;
-    height: 98%;
+    /*background-attachment: fixed;*/ 
+    width: 95%;
+    height: 200px;
     
 }
 #rally{
@@ -103,9 +103,13 @@ h1{
 color: grey;  
 }
 h5 {
+    color: black;
     font-size: 30px;
 }
 #titleCv{
     font-size: 60px;
     color: lightgreen;
 }
+/*#leftColum {
+    overflow:scroll;
+}*/
