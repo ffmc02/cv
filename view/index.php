@@ -5,7 +5,7 @@ include_once '../controleur/indexCtrl.php';
 include ("../include/head.php");
 //include ("../include/navbar.php");
 ?>
-<div class="container-fluid">
+<div class="container-fluid text-center">
     <div class="row">
         <div class="col-lg-12 text-center border">
             <h1>CV INTERACTIF GAËTAN JONARD</h1>
@@ -49,7 +49,7 @@ include ("../include/head.php");
                     </div>
                     <div class="row">
                         <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
-                            <h5 class="h3skills">Langages </h5>
+                            <h5 class="h3skills">Langages</h5>
                         </div>
                     </div>
                     <div class="row justify-content-start" style="text-align: left;color:#000;">
@@ -198,11 +198,11 @@ include ("../include/head.php");
                         ?>               
                     </div>
                     <div class="row">
-                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white">
+                        <div class="skillsDark col-sm-12 col-md-12 col-lg-12 border border-white mb-1 px-1">
                             <h5 class="h3skills">Autres Compétences </h5>
                         </div>
                     </div>
-                    <div class="row justify-content-start" style="text-align: left;color:#000;">
+                    <div class="row justify-content-start mb-2" style="text-align: left;color:#000;">
                         <?php
                         $i = 0;
                         foreach ($othrerAbilities as $key => $val) {
@@ -239,7 +239,7 @@ include ("../include/head.php");
                 <!--espace entre les différentes catégorie-->
                 <!--<img id="imgProductionD2wm"src="asset/img/imagePresentation/realisation-application-web_330x330-crop=1.jpg" alt=""/>-->
             </div>
-            <div id="productionD2wm"> 
+            <div id="productionD2wm"class="mx-1"> 
                 <div class=" row">
                     <div class="titleRealisationDwm col-sm-12 col-md-12 col-lg-12 border border-white">
                         <h1>Mes projets réalisés pendant ma formation Web Développeur à la MANU Soissons (02)<br>
@@ -300,7 +300,7 @@ include ("../include/head.php");
             </div>
             <div id="professionalexperiences">   
                 <div class="row">
-                    <div class="titleProfessional col-sm-12 col-md-12 col-lg-12 border border-white">
+                    <div class="titleProfessional col-sm-12 col-md-12 col-lg-12 border border-white mx-1">
                         <h2 class="h1ptofessional">
                             Mes expériences professionnelles
                         </h2>
