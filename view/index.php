@@ -227,19 +227,22 @@ include ("../include/head.php");
         </div>
         <div class="col-lg-8 center border">
             <!--colonne central-->
-            <div class="row" id="Goals">
-                <div class="col-sm-12 col-md-12 col-lg-12 border border-white text-center">
-                    <h1>Mon objectif :</h1>
-                    <p>-Trouver une entreprise a fin d'effectuer mon stage du 22 Juin au 18 septembre 2020 <br>
-                        -Avoir mon titre professionnel de Concepteur developpeur d'application <br>(niveau bac +3/4) </p>
+            <div id="Goals">
+                <div class="row" >
+                    <div class="col-sm-12 col-md-12 col-lg-12 border border-white text-center">
+                        <h1>Mon objectif :</h1>
+                        <p>-Trouver une entreprise a fin d'effectuer mon stage du 22 Juin au 18 septembre 2020 <br>
+                            -Avoir mon titre professionnel de Concepteur developpeur d'application <br>(niveau bac +3/4) </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="espace">
-                <!--espace entre les différentes catégorie-->
-                <!--<img id="imgProductionD2wm"src="asset/img/imagePresentation/realisation-application-web_330x330-crop=1.jpg" alt=""/>-->
-            </div>
-            <div id="productionD2wm"class="mx-1"> 
+            <!--            <div class="espace">
+                            espace entre les différentes catégorie
+                            <img id="imgProductionD2wm"src="asset/img/imagePresentation/realisation-application-web_330x330-crop=1.jpg" alt=""/>
+                            
+                        </div>-->
+            <div id="productionD2wm"> 
                 <div class=" row">
                     <div class="titleRealisationDwm col-sm-12 col-md-12 col-lg-12 border border-white">
                         <h1>Mes projets réalisés pendant ma formation Web Développeur à la MANU Soissons (02)<br>
@@ -275,10 +278,10 @@ include ("../include/head.php");
                     </div>
                 </div>
             </div>
-            <div class="espace">
-                <!--espace entre les différentes catégorie-->
-                <!--<img  id="imgProductionCda" src="asset/img/imagePresentation/REALISATION-BRAS-1810-2016-ok.png" alt=""/>-->
-            </div>
+            <!--            <div class="espace">
+                            espace entre les différentes catégorie
+                            <img  id="imgProductionCda" src="asset/img/imagePresentation/REALISATION-BRAS-1810-2016-ok.png" alt=""/>
+                        </div>-->
             <div id="productionCda">
                 <div class=" row">
                     <div class="titleRealisationCda col-sm-12 col-md-12 col-lg-12 border border-white">
@@ -294,10 +297,10 @@ include ("../include/head.php");
                     </div>
                 </div>
             </div>
-            <div class="espace">
-                <!--espace entre les différentes catégorie-->
-                <!--<img id="imgProfessionalExperiences"src="asset/img/imagePresentation/ob_707a2e_400-f-68091104-r9ugmv7kzh9jkvp66yn5vdd.jpg" alt=""/>-->
-            </div>
+            <!--            <div class="espace">
+                            espace entre les différentes catégorie
+                            <img id="imgProfessionalExperiences"src="asset/img/imagePresentation/ob_707a2e_400-f-68091104-r9ugmv7kzh9jkvp66yn5vdd.jpg" alt=""/>
+                        </div>-->
             <div id="professionalexperiences">   
                 <div class="row">
                     <div class="titleProfessional col-sm-12 col-md-12 col-lg-12 border border-white mx-1">
@@ -354,10 +357,10 @@ include ("../include/head.php");
                     </div>
                 </div>
             </div>
-            <div class="espace">
-                <!--<img  id="imgTraining"src="asset/img/imagePresentation/10390091.jpg" alt=""/>-->
-                <!--espace entre les différentes catégorie-->
-            </div>
+            <!--            <div class="espace">
+                            <img  id="imgTraining"src="asset/img/imagePresentation/10390091.jpg" alt=""/>
+                            espace entre les différentes catégorie
+                        </div>-->
             <div id="training">
                 <div class="titleTraining col-sm-12 col-md-12 col-lg-12 border border-white">
                     <h2 class="h1training">Mes formations professionnelles</h2>
@@ -413,9 +416,9 @@ include ("../include/head.php");
             </div>
 
 
-            <div class="espace"> <!--espace entre les différentes catégorie-->
-                <!--<img id="imgHobbies" src="asset/img/imagePresentation/example-of-cv-hobbies-450x295.png" alt=""/>-->
-            </div>
+            <!--            <div class="espace"> espace entre les différentes catégorie
+                            <img id="imgHobbies" src="asset/img/imagePresentation/example-of-cv-hobbies-450x295.png" alt=""/>
+                        </div>-->
 
             <div id="hobbies">
                 <div class="row">

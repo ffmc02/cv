@@ -61,7 +61,7 @@ a:hover
 .titleContact,
 #Goals
 {
-    font-size:40px;
+    font-size:30px;
     color: black;
 }
 .formulaire{
@@ -88,7 +88,7 @@ p
       font-size: 12px;  
 }
 h2{
-    color: wheat;
+    color: black;
     font-size: 15px;
 }
 h4{
@@ -101,7 +101,7 @@ h3{
 }
 h1{
   font-size: 20px;
-color: grey;  
+color: black;  
 }
 h5 {
     color: black;
