@@ -2,18 +2,21 @@ body
 {
     font-size: 12px;
       background-color: rgba(255, 255, 255);
-/*    text-align: center;*/
+    text-align: center;
     margin:0px;
     padding:0px;
     background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
-    /*Pour ne pas rendre le texte sélectionnable, évite les backgrounds bleus 
+/*    Pour ne pas rendre le texte sélectionnable, évite les backgrounds bleus 
     (surtout quand on double clique sur une page, par exemple), à mettre dans la balise body du css*/
-    -moz-user-select: none; /* Firefox */
-    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
-    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
-    user-select: none; /* Propriété standard */
+    -moz-user-select: none; 
+    /*Firefox*/ 
+  -webkit-user-select: none; /*   Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; 
+    /*Internet explorer depuis la version 10 et Edge*/ 
+    user-select: none; 
+    /*Propriété standard*/ 
     list-style-type: none;
     color: green;
       display: flex;
@@ -21,7 +24,7 @@ body
   justify-content: center;
 }
 .indexBright{
-    /*font-size: 35px;*/
+    font-size: 35px;
 }
 .infoUtile{
     font-size: 12 px;
@@ -73,7 +76,7 @@ a{
 }
 #imgTraining, #imgSkills, #imgProfessionalExperiences, #imgProductionD2wm, #imgProductionCda,#imgHobbies
 {
-    /*background-attachment: fixed;*/ 
+    background-attachment: fixed; 
     width: 95%;
     height: 200px;
     
@@ -107,3 +110,5 @@ h5 {
     color: black;
     font-size: 13px;
 }
+/*html,body,h1,h2,h3,h4,h5,h6
+{font-family: "Roboto", sans-serif}*/
