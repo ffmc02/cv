@@ -74,12 +74,15 @@ array_push($language, array('titre' => 'JavaScript', 'valeur' => 75));
 array_push($language, array('titre' => 'PHP', 'valeur' => 89));
 array_push($language, array('titre' => 'C#', 'valeur' => 75));
 array_push($language, array('titre' => 'SQL', 'valeur' => 75));
+array_push($language, array('titre' => 'Java', 'valeur' => 25));
+
 //tableau des frameworks
 $frameworks =array();
 array_push($frameworks, array('titre'=>'Bootstrap', 'valeur' =>85));
 array_push($frameworks, array('titre'=>'.net', 'valeur' =>55));
 array_push($frameworks, array('titre'=>'Jquery', 'valeur' =>90));
-array_push($frameworks, array('titre'=>'Symfony', 'valeur' =>58));
+array_push($frameworks, array('titre'=>'Symfony', 'valeur' =>65));
+array_push($frameworks, array('titre'=>'VueJs', 'valeur' =>70));
 //tableau des outils
 $outils = array();
 array_push($outils, array('titre'=>'Atom', 'valeur' =>95));
@@ -90,6 +93,7 @@ array_push($outils, array('titre'=>'NetBeans', 'valeur' =>90));
 array_push($outils, array('titre'=>'Visual Studio ', 'valeur' =>80));
 array_push($outils, array('titre'=>'Draw.io ', 'valeur' =>90));
 array_push($outils, array('titre'=>'Looping', 'valeur' =>90));
+array_push($outils, array('titre'=>'PhpStorm', 'valeur' =>85));
 // tableau des extentions
 $extension=array();
 array_push($extension, array('titre'=>'PDO', 'valeur' =>96));
